@@ -5,9 +5,9 @@
 ## Motivation
 
 We decided to build a hit-the-mole game for a Programming Course and
-found that UWP was a nice choice. :smile:
+found that UWP was a nice choice. :)
 
-Learning to build C#/.NET apps instead of MFC apps. :joy:
+Learning to build C#/.NET apps instead of MFC apps. 
 
 ## Features
 
@@ -24,3 +24,4 @@ Learning to build C#/.NET apps instead of MFC apps. :joy:
 ## 3rd Party
 
 The *Mole*, *Bomb*, *Boom*, *Grassland* images are from the Internet.
+## Thanks for @BOT-Man-JL 's help !##
