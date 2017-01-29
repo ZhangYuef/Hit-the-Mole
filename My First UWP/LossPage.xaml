@@ -20,10 +20,10 @@
                              From="0" To="1" Completed="DoubleAnimation_Completed"/>
         </Storyboard>
         <Storyboard x:Name="sb1_2">
-            <DoubleAnimation Duration="0:0:1"
+            <!--<DoubleAnimation Duration="0:0:1"
                              Storyboard.TargetName="lawnImg"
                              Storyboard.TargetProperty="Opacity"
-                             From=".8" To="0" />
+                             From=".8" To="0" />-->
             <DoubleAnimation Duration="0:0:1"
                              Storyboard.TargetName="boomImg"
                              Storyboard.TargetProperty="Opacity"

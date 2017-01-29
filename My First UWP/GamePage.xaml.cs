@@ -1,29 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
-// “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
-
 namespace My_First_UWP
 {
-    /// <summary>
-    /// 可用于自身或导航至 Frame 内部的空白页。
-    /// </summary>
-    public sealed partial class GamePage : Page
+	public sealed partial class GamePage : Page
     {
         private List<BitmapImage> imageList = new List<BitmapImage>();
         private List<BitmapImage> imageList2 = new List<BitmapImage>();
@@ -126,7 +112,7 @@ namespace My_First_UWP
             sb_load.Begin();
         }
 
-        protected async Task PlaySound(string sound)
+        private async Task PlaySound(string sound)
         {
             MediaElement a = new MediaElement();
             Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
@@ -149,7 +135,7 @@ namespace My_First_UWP
             isQuit = true;
         }
 
-        private async void checkHit(int i)
+        private async Task checkHit(int i)
         {
             rwl.EnterReadLock();
             if (imgType[i] == 0)
@@ -157,7 +143,7 @@ namespace My_First_UWP
                 mainFrame.UpdateScore(1);
                 imgType[i] = 2;
                 (btnList[i].Content as Image).Source = imageList2[0];
-                PlaySound("hSound.wav");
+				await PlaySound("hSound.wav");
                 cHit++;
             }
             else if (imgType[i] == 1)
@@ -165,55 +151,55 @@ namespace My_First_UWP
                 mainFrame.UpdateScore(-1);
                 imgType[i] = 2;
                 (btnList[i].Content as Image).Source = imageList2[1];
-                PlaySound("bomb.wav");
+				await PlaySound("bomb.wav");
             }
             mainFrame.UpdateScore(0);
             rwl.ExitReadLock();
         }
 
-        private void b1_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b1_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(1);
+            await checkHit(1);
         }
 
-        private void b2_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b2_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(2);
+            await checkHit(2);
         }
 
-        private void b3_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b3_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(3);
+            await checkHit(3);
         }
 
-        private void b4_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b4_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(4);
+            await checkHit(4);
         }
 
-        private void b5_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b5_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(5);
+            await checkHit(5);
         }
 
-        private void b6_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b6_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(6);
+            await checkHit(6);
         }
 
-        private void b7_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b7_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(7);
+            await checkHit(7);
         }
 
-        private void b8_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b8_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(8);
+            await checkHit(8);
         }
 
-        private void b9_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void b9_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            checkHit(9);
+            await checkHit(9);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="4d58a08b-49c2-4671-9fbf-b55be1491c47" Publisher="CN=ZYF" Version="1.0.2.0" />
+  <Identity Name="4d58a08b-49c2-4671-9fbf-b55be1491c47" Publisher="CN=JohnLee" Version="1.0.2.0" />
   <mp:PhoneIdentity PhoneProductId="4d58a08b-49c2-4671-9fbf-b55be1491c47" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>打地鼠</DisplayName>
