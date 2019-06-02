@@ -16,12 +16,19 @@ Learning to build C#/.NET apps instead of MFC apps.
 
 ## Screenshots
 
-![](Demo/wp_ss_20160801_0001.png)
-![](Demo/wp_ss_20160801_0003.png)
-![](Demo/wp_ss_20160801_0004.png)
-![](Demo/wp_ss_20160801_0005.png)
+<img src="Demo/wp_ss_20160801_0001.png" width="400px"></img>
+<img src="Demo/wp_ss_20160801_0003.png" width="400px"></img>
+<img src="Demo/wp_ss_20160801_0004.png" width="400px"></img>
+<img src="Demo/wp_ss_20160801_0005.png" width="400px"></img>
 
 ## 3rd Party
 
 The *Mole*, *Bomb*, *Boom*, *Grassland* images are from the Internet.
-## Thanks for @BOT-Man-JL 's help !##
+
+## UWP store
+
+Searched by the name "**Hit the mole!**"
+** *It's not available now.* 
+
+## Acknowledgement
+Thanks for @BOT-Man-JL 's help!
